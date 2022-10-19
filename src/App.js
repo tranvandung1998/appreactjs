@@ -1,10 +1,8 @@
-import { product } from "./component/feckApi/Product";
-import Header from "./component/Header/index";
-
+import Countdown from "./component/Days/countdown"
 function App() {
   return (
     <div className="App">
-        <Header/>
+        <Countdown />
     </div>
   );
 }
