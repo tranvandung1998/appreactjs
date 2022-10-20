@@ -6,6 +6,7 @@ export default function Countdown() {
 
     const $ = setInterval(function() {
       const now = new Date().getTime();
+
       const distance = countDownDate - now;
       
       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -16,13 +17,13 @@ export default function Countdown() {
       
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
                     
-        document.getElementById("days").innerHTML = days;
+      document.getElementById("days").innerHTML = days;
                     
-        document.getElementById("hrs").innerHTML = hours;
+      document.getElementById("hrs").innerHTML = hours;
                     
-        document.getElementById("mins").innerHTML = minutes;
+      document.getElementById("mins").innerHTML = minutes;
                     
-        document.getElementById("secs").innerHTML = seconds;
+      document.getElementById("secs").innerHTML = seconds;
     }, 1000);
   return (
     <div>
